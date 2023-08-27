@@ -31,7 +31,7 @@ sudo chmod 744 reset-input-devices.sh
 
 3.Bu betiğin uyku işleminden sonra çalışmasını sağlamak için bir systemd servisi kullandım.  
 Bunun için /etc/systemd/system/ dizininde bir hizmet dosyası oluşturdum.
-buna /etc/systemd/system/reset-input-devices-after-sleep.service dedim. içeriği bu şekilde ayarladım:
+bu bağlamda /etc/systemd/system/reset-input-devices-after-sleep.service dosyasını oluşturdum. içeriği bu şekilde ayarladım:
 
 
 ```
