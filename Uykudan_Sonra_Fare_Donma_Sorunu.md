@@ -1,4 +1,4 @@
-Linux'da karşılaştığım başka bir sorun ise bilgisayarımı uyku moduna alıp tekrar başlattığımda faremin çalışmamasıydı. Bunun da düzeltmek için şu adımları izledim.
+Linux'da karşılaştığım başka bir sorun ise bilgisayarımı uyku moduna alıp tekrar başlattığımda faremin çalışmamasıydı. Bunu düzeltmek için şu adımları izledim.
 
 1.Aşağıdaki kodu '/usr/local/bin/reset-input-devices.sh' adresine koydum.
 
