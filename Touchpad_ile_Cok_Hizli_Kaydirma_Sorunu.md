@@ -1,4 +1,4 @@
-Linux'daki bir diğer sorun, Asus laptopumda tarayıcılarda touchpad ile yapılan kaydırma işleminin çok hızlı olmasıydı. Bu sorunu şu adımları izleyerek çözdüm.
+Linux'daki bir diğer sorun, laptopumda tarayıcılarda touchpad ile yapılan kaydırma işleminin çok hızlı olmasıydı. Bu sorunu şu adımları izleyerek çözdüm.
 
 Chromium tabanlı tarayıcılar
 
