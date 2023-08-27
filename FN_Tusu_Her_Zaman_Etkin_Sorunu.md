@@ -27,4 +27,3 @@ options asus_wmi fnlock_default=N
 $ sudo update-initramfs -u -k all; reboot
 ```
 
-ve düzeldi umarım işinize yarar.
