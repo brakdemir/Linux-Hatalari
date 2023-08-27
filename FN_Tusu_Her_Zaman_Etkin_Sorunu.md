@@ -15,7 +15,7 @@ ls /etc/modprobe.d
 sudo nano /etc/modprobe.d/appletalk-blacklist.conf
 ```
 
-4.Ve dosyanın sonuna bu kodu ekledim 
+4.ve dosyanın sonuna bu kodu ekledim 
 
 ```
 options asus_wmi fnlock_default=N
@@ -27,4 +27,4 @@ options asus_wmi fnlock_default=N
 $ sudo update-initramfs -u -k all; reboot
 ```
 
-ve düzeldi umarım işinize yaramıştır.
+ve düzeldi umarım işinize yarar.
