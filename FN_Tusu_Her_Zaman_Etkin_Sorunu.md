@@ -1,4 +1,4 @@
-Linux'u Asus laptopuma yükledikten sonra karşılaştığım sorunlardan biri ise bilgisayarım her açıldığında FN tuşunun aktif olarak gelmemesiydi. Bunun kapatmak için şu adımları izledim.
+Linux'u Asus laptopuma yükledikten sonra karşılaştığım sorunlardan biri ise bilgisayarım her açıldığında FN tuşunun aktif olarak gelmesiydi. Bunun kapatmak için şu adımları izledim.
 
 1.Terminalde bu kodu çalıştırdım.
 
