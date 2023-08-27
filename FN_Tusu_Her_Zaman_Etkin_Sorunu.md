@@ -8,6 +8,7 @@ ls /etc/modprobe.d
 
 2.içerisinde "appletalk-blacklist.conf" dosyasının olduğunu gördüm.
 
+
 3.dosyayı nano ile açtım.
 
 ```
