@@ -1,19 +1,50 @@
-Linux'daki bir diğer sorun, laptopumda tarayıcılarda touchpad ile yapılan kaydırma işleminin çok hızlı olmasıydı. Bu sorunu şu adımları izleyerek çözdüm.
+Linux'daki bir diğer sorun, laptopumda touchpad ile yapılan kaydırma işleminin çok hızlı olmasıydı. Bu sorunu şu adımları izleyerek çözdüm.
 
-Chromium tabanlı tarayıcılar
+Ben bu durumda Fedora Linux kullanıyordum siz kendi distronuza göre indirme işlemlerini yapabilirsiniz
 
-```
-1.brave://flags/ a gidin 
-2.Windows Scrolling Personality yazın 
-3.değeri Defult olarak gelir değeri Enabled yapın
-4.brave'i yeniden başlatın
-```
-
-Firefox
+Gerekli İndirmeler
 
 ```
-1.about:config e gidin
-2.mousewheel.default.delta_multiplier_y yazın
-3.değeri 100 olarak gelir değeri 15 ile 20 arasına bir değer yapın
-4.firefox'u yeniden başlatın
+sudo dnf install libudev-devel
+sudo dnf install libinput-devel
+sudo dnf install cmake
+sudo dnf install gcc
+sudo dnf install meson
 ```
+
+Libinput-config Dosyasını indiriyoruz
+
+```
+git clone https://gitlab.com/warningnonpotablewater/libinput-config.git
+cd libinput-config
+```
+
+Sonrasında bu kodları çalıştırıyoruz
+
+```
+meson setup build
+cd build
+ninja
+sudo ninja install
+```
+
+Sonrasında "/etc/libinput.conf" dosyasını açıyoruz
+
+```
+sudo nano /etc/libinput.conf
+```
+
+ve içerisine şu kodu giriyoruz
+
+```
+scroll-factor=0.2
+```
+
+bu değeri ne kadar arttırırsanız kaydırma işlemi o kadar hızlı olur
+
+sonrasında bilgisayarımızı yeniden başlatıyoruz
+
+```
+sudo reboot
+```
+
