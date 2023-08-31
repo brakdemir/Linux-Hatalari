@@ -3,6 +3,7 @@ Linux'u bir dizüstü bilgisayarda kullanıyorsanız piliniz düzgün bir şekil
 Fedora Linux için
 ```
 sudo dnf install tlp tlp-rdw
+systemctl enable tlp.service
 ```
 
 Ubuntu için
@@ -10,4 +11,5 @@ Ubuntu için
 sudo add-apt-repository ppa:linrunner/tlp
 sudo apt update
 sudo apt install tlp tlp-rdw
+systemctl enable tlp.service
 ```
