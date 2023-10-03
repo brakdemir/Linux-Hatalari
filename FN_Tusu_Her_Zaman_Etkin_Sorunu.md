@@ -24,6 +24,6 @@ options asus_wmi fnlock_default=N
 5.Sonrasında makineyi yeniden başlatmak için bu kodu çalıştırdım.
 
 ```
-$ sudo update-initramfs -u -k all; reboot
+sudo update-initramfs -u -k all; reboot
 ```
 
